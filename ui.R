@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  includeScript("format_numbers.js"),
+  tags$head(tags$script(src="format_numbers.js")),
   
   h4("Option 1"),
   "Leave the number of the box unchanged and format it when you ",
